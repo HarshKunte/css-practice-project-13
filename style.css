@@ -15,6 +15,9 @@ header{
     background-color: #7030cc;
     color: #fff;
 }
+.hamburger{
+    display: none;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -175,4 +178,78 @@ nav{
 }
 .purple-bg .card-desc{
     color: #fff;
+}
+@media screen and (max-width:768px){
+    header,.features, .feature-cards{
+       padding: 2rem;
+    }
+    .inner-header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .features{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .logo{
+        width: 7.5rem;
+        height: 2.5rem;
+    }
+    .list-item {
+        margin-right: 1rem;
+        font-size: 0.9rem;
+    }
+    .list-item>button {
+        padding: 0.5rem 1rem;
+        margin-right: 0;
+        font-size: 0.9rem;
+    }
+    .inner-header>img {
+        order: -1;
+        width: 80%;
+        height: auto;
+    }
+    .inner-header-content {
+        padding-top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .features-content {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .feature-point{
+        width: 80%;
+        margin-right: 0;
+    }
+    .card{
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width:450px){
+    .list{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .feature-point{
+        width: 100%;
+    }
+    .inner-header-content>h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .features-content>h4 ,.feature-cards>h3 {
+        text-align: center;
+    }
 }
